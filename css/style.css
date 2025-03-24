@@ -1,0 +1,193 @@
+/* Reset dasar */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fef7e6; /* Warna latar belakang cream muda untuk tampilan lebih soft */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tampilan Welcome */
+.welcome {
+  text-align: center;
+  background-color: #fff3d6;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1 {
+  color: #a05a2c;
+  font-size: 24px;
+}
+
+.welcome p {
+  color: #6b4226;
+  font-size: 16px;
+}
+
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4d9a9; /* Warna peach lembut agar selaras dengan tema */
+  padding: 15px 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk tampilan lebih elegan */
+  border-radius: 8px; /* Tambahan border-radius agar lebih estetik */
+}
+
+.logo {
+  color: #6b4226; /* Warna coklat tua agar terlihat jelas */
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px; /* Jarak antar menu agar lebih rapi */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6b4226; /* Warna senada dengan logo */
+  font-size: 16px;
+  transition: 0.3s; /* Efek transisi hover */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Efek underline saat hover agar lebih interaktif */
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 20px; /* Radius lebih besar agar lebih modern */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); /* Bayangan lembut untuk tampilan lebih menarik */
+}
+
+/* Judul */
+h1 {
+  font-size: 26px;
+  color: #a05a2c; /* Warna coklat hangat agar nyaman dilihat */
+  margin-bottom: 20px;
+}
+
+/* Card Style */
+.card {
+  background: #fff8e7; /* Warna cream lebih terang untuk pemisahan visual */
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 16px; /* Memberikan efek bulat yang lebih lembut */
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan agar lebih elegan */
+}
+
+/* Judul di dalam card */
+h2 {
+  color: #d4a373; /* Warna coklat soft agar senada */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Input */
+input {
+  display: block; /* Agar input berada di atas tombol */
+  width: 30%; /* Ukuran lebih proporsional */
+  padding: 8px; /* Padding agar lebih nyaman diketik */
+  border: 2px solid #e3caa7; /* Warna border lebih lembut */
+  border-radius: 6px; /* Border radius agar lebih halus */
+  font-size: 14px;
+  margin: 8px auto; /* Ditengahkan */
+  background: #fffaf1;
+  text-align: center;
+}
+
+/* Container tombol */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 6px; /* Jarak antar tombol */
+  margin-top: 6px;
+}
+
+/* Tombol */
+button {
+  width: 120px; /* Ukuran tombol lebih kecil */
+  padding: 8px; /* Padding lebih kecil agar tidak terlalu besar */
+  font-size: 14px;
+  background-color: #f4b183; /* Warna peach agar selaras */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e89966; /* Warna lebih gelap saat hover untuk efek interaktif */
+}
+
+/* Tombol Reset */
+.reset-btn {
+  width: 100px; /* Ukuran lebih kecil agar tidak mendominasi */
+  background-color: #e57373; /* Warna merah untuk indikasi reset */
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f; /* Warna merah lebih gelap saat hover */
+}
+
+/* Hasil perhitungan */
+p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a05a2c; /* Warna teks agar senada dengan tema */
+  margin-top: 12px;
+}
+
+/* Footer */
+footer {
+  background: #d4a373; /* Warna coklat soft */
+  color: white;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 20px; /* Tambahkan jarak dari konten atasnya */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 900px) {
+  .container {
+      width: 90%; /* Lebar lebih fleksibel di layar kecil */
+  }
+
+  input, button {
+      width: 100%; /* Agar lebih mudah digunakan di layar kecil */
+  }
+
+  nav {
+      flex-direction: column; /* Navigasi ditumpuk di layar kecil */
+      text-align: center;
+  }
+
+  nav ul {
+      padding-top: 10px; /* Jarak antara logo dan menu */
+  }
+
+  nav ul li {
+      margin: 5px 0; /* Jarak antar item menu */
+  }
+}

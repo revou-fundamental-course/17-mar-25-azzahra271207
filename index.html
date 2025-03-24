@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsivitas -->
+    <title>Kalkulator Persegi</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS untuk styling -->
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">Kalkulator Persegi</div> <!-- Logo atau judul aplikasi -->
+    </nav>
+
+    <!-- Tampilan Welcome -->
+    <section class="welcome">
+        <h1>Selamat Datang di Kalkulator Persegi!</h1>
+        <p>Gunakan aplikasi ini untuk menghitung luas dan keliling persegi dengan mudah.</p>
+    </section>
+
+    <div class="container"> <!-- Kontainer utama untuk menampung semua elemen kalkulator -->
+        <!-- Hitung Luas Persegi -->
+        <div class="card"> <!-- Kartu untuk menghitung luas persegi -->
+            <h2>Luas Persegi</h2> <!-- Judul bagian luas persegi -->
+            <p><strong>Rumus:</strong> L = S x S</p> <!-- Menampilkan rumus luas persegi -->
+            <p><strong>Keterangan:</strong></p> <!-- Keterangan untuk rumus -->
+            <p>L = Luas, S = Sisi</p> <!-- Penjelasan variabel dalam rumus -->
+            <input type="number" id="sisiLuas" placeholder="Masukkan sisi"> <!-- Input untuk sisi persegi -->
+            <div class="button-container"> <!-- Kontainer untuk tombol -->
+                <button onclick="hitungLuas()">Hitung</button> <!-- Tombol untuk menghitung luas -->
+                <button onclick="resetLuas()" class="reset-btn">Reset</button> <!-- Tombol untuk mereset input luas -->
+            </div>
+            <p id="hasilLuas"></p> <!-- Tempat untuk menampilkan hasil luas -->
+        </div>
+
+        <!-- Hitung Keliling Persegi -->
+        <div class="card"> <!-- Kartu untuk menghitung keliling persegi -->
+            <h2>Keliling Persegi</h2> <!-- Judul bagian keliling persegi -->
+            <p><strong>Rumus:</strong> K = 4 x S</p> <!-- Menampilkan rumus keliling persegi -->
+            <p><strong>Keterangan:</strong></p> <!-- Keterangan untuk rumus -->
+            <p>K = Keliling, S = Sisi</p> <!-- Penjelasan variabel dalam rumus -->
+            <input type="number" id="sisiKeliling" placeholder="Masukkan sisi"> <!-- Input untuk sisi persegi -->
+            <div class="button-container"> <!-- Kontainer untuk tombol -->
+                <button onclick="hitungKeliling()">Hitung</button> <!-- Tombol untuk menghitung keliling -->
+                <button onclick="resetKeliling()" class="reset-btn">Reset</button> <!-- Tombol untuk mereset input keliling -->
+            </div>
+            <p id="hasilKeliling"></p> <!-- Tempat untuk menampilkan hasil keliling -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      &copy; Kalkulator Sederhana Luas dan Keliling Persegi 2025 <!-- Informasi hak cipta -->
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Menghubungkan file JavaScript untuk fungsionalitas -->
+</body>
+</html>
